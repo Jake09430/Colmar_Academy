@@ -1,24 +1,19 @@
 html{
-    font-family: Helvetica;
-    font: 22px;
-    color: seashell;
-    opacity: 0.9;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    max-width: 1400px;
+    max-width: 1800px;
 }
 
 header{
-    background-color: rgb(224, 22, 22);
+    background-color: rgb(255, 255, 255);
+    max-width: 1800px;
     height: 64px;
     top: 0px;
-    position: fixed;
+    position: absolute;
     width: 100%;
     display: inline-flex;
     align-items: center;
-    border-bottom: 1px solid seashell;
+    justify-content: center;
+    left: 0%;
+    opacity: 1;
 }
 header img{
     height: 50px;
@@ -26,13 +21,13 @@ header img{
 }
 header h1{
     margin-left: 10px;
-    color:rgb(68, 68, 68);
+    color:rgb(82, 81, 81);
+    font-size: 24px;
 }
 header h1 span{
     opacity: 0.7;
 }
 .headerul{
-    background-color: aqua;
     display:flex;
     list-style: none;
     justify-content: flex-end;
@@ -40,167 +35,320 @@ header h1 span{
     margin-right: 24px;
 }
 .headerul li {
-    color: rgb(255, 255, 255);
+    color:rgb(82, 81, 81);
     margin-left: 16px;
 }
 .headerul li a{
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
+    text-decoration: none;
     margin-left: 16px;
-    
+    color:rgb(82, 81, 81);
 }
 .headerul li a:hover{
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
-    font-size: large;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-body{
-    background-color: black;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.mission {
-    margin-top:  70px;
-    background-image: url("./Img/img-mission-background.jpg");
-    background-position-x: center;
-    width: 1200px;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* Header ok */
 
-.missiondiv{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.missiontext{
-    color:antiquewhite;
-    background-color: black;
-    text-align: center;
-    width: 1200px;
-}
-
-
-.featuretext{
-    text-align: center;
-    margin-top: 75px;
-}
-
-.featuredisplay{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.featurepresentation{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1000px;
-}
-  
-
-.featurebox img{
-    height: 200px;
-    width: 300px;
-}
-
-.featurebox h4{
-    text-align: center;
-    margin-top: 10px;
-}
-
-.location{
-    background-image: url("./Img/img-locations-background.jpg") ;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position: center;
-    background-size: 1200px 500px;
-    display: block;
-    align-items: center;
-    justify-content: center;
-}
-.location h2{
-    text-align: center;
-    padding-top: 80px;
-    padding-bottom: 5px;
-}
-.locationboxalign{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.locationbox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 100px;
-}
-.downtown{
-    background-color: rgb(0, 0, 0);
-    opacity: 1;
-    display: inline-flex;
-    text-align: center;
-    width: 300px;
-    height: 300px;
-    margin:0px 20px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.eastbayside{
-    background-color: black;
-    opacity: 1;
-    display: inline-flex;
-    text-align: center;
-    width: 300px;
-    height: 300px;
-    margin:0px 20px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.oakdale{
-    background-color: black;
-    opacity: 1;
-    display: inline-flex;
-    text-align: center;
-    width: 300px;
-    height: 300px;
-    margin:0px 20px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-footer {
+main{
+    top: 64px;
+    position: absolute;
+    max-width: 1800px;
     width: 100%;
-}
-.contact{
-    display: flex;
-    flex-direction: column;
+    display: block;
     justify-content: center;
+    left: 0%;
+    opacity: 1;
 }
-.contact h2{
-    text-align: center;
+.learn{
+    height: 600px;
+    display: flex;
 }
-.contact h5{
-    text-align: center;
-    margin-top: 5px;
+.learn .learnimg{
+    background-color: rgb(216, 216, 216);
+    height: 100%;
+    width: 60%;
+    margin-left: 0px;
+    display: flex;
+}
+.learnimg .img1{
+    background-image: url("./images/banner.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 32px;
+    width: 100%;
+    border-right: 20px;
+    
 }
 
-.copyright h5{
-    text-align: left;
-    margin-left: 20px;
+.learn .learntext{
+    background-color: rgb(216, 216, 216);
+    height: 100%;
+    width: 40%;
+    margin-right: 0px;
+    display: block;
+}
+.learntext .text1{
+    width: 80%;
+    margin-right: 0px;
+    margin-left: 24px;
+    margin-top: 150px;;
+}
+.text1 h2{
+    color:rgb(82, 81, 81);
+    font-size: 50px;
+    font-weight: bold;
+}
+.text1 h3{
+    color:rgb(82, 81, 81);
+    font-size: 20px;
+    font-weight: bold;
+}
+.button1{
+    width: 80%;
+    margin-right: 0px;
+    margin-left: 24px;
+}
+.button1 .text2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text2 a{
+    background-color: rgb(82, 81, 81);
+    font-size: 30px;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    padding: 8px;
+    width: 100%;   
+}
+/* ok pour le moments*/
+.practice{
+    height: 600px;
+    display: flex;
+}
+.practice .practiceimg{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 60%;
+    margin-left: 0px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 66% auto;
+}
+.practiceimg .img2{
+    background-image: url("./images/information-main.jpg");
+    background-size: 90%;
+    height: 100%;
+    width: 104%;
+    background-repeat: no-repeat;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    margin-left: 24px;
+    margin-right: 0px;
+}
+.practiceimg .text2{
+    height: content;
+    position: relative;
+    width: 90%;
+    margin-top: 32px;
+    margin-left: 24px;
+    margin-right: 0px;
+    margin-bottom: 32px;
+}
+.text2 h2{
+    margin-top: 32px;
+    color:rgb(74, 74, 74);
+}
+.text2 p{
+    margin-top: 24px;
+    color: rgb(124, 124, 124);
+}
+.text2 h5{
+    margin-top: auto;
+    margin-bottom: 32px;
+    color: rgb(74, 74, 74);
+}
+.practice .practicebutton{
+    margin-right: 0px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    height: auto;
+    width: 40%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 33.4% 33.4% 33.4%;
+}
+.practicebutton .orientation{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows:  100%;
+    overflow: hidden;
+}
+.orientation .orientationimg{
+    background-image: url("./images/information-orientation.jpg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    width: 100%;
+    height: 81%;
+    margin-top: 0px;
+    margin-left: 16px;
+}
+.orientation .orientationtext{
+    width: 100%;
+    height: 81%;
+    margin-top: 0px;
+}
+.orientationtext h3{
+    color: rgb(74, 74, 74);
+    margin-left: 16px;
+    font-size: 32px;
+    margin-bottom: 4px;
+}
+.orientationtext h4{
+    color: rgb(74, 74, 74);
+    margin-left: 16px;
+    margin-bottom: 6px;
+    margin-top: 4px;
+    max-width: 80%;
+}
+.orientationtext a{
+    color: rgb(74, 74, 74);
+    margin-left: 16px;
+    margin-top: 6px;
+}
+.practicebutton .campus{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows:  100%;
+    overflow: hidden;
+}
+.campus .campusimg{
+    background-image: url("./images/information-campus.jpg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    width: 100%;
+    height: 81%;
+    margin-top: 0px;
+    margin-left: 16px;
+}
+.campus .campustext{
+    width: 100%;
+    height: 81%;
+    margin-top: 0px;
+}
+.campustext h3{
+    color: rgb(74, 74, 74);
+    margin-left: 16px;
+    font-size: 32px;
+    margin-bottom: 4px;
+}
+.campustext h4{
+    color: rgb(74, 74, 74);
+    margin-left: 16px;
+    margin-bottom: 6px;
+    margin-top: 4px;
+    max-width: 80%;
+}
+.campustext a{
+    color: rgb(74, 74, 74);
+    margin-left: 16px;
+    margin-top: 6px;
+}
+.practicebutton .guest{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows:  100%;
+    overflow: hidden;
+}
+.guest .guestimg{
+    background-image: url("./images/information-guest-lecture.jpg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    width: 100%;
+    height: 81%;
+    margin-top: 0px;
+    margin-left: 16px;
+}
+.guest .guesttext{
+    width: 100%;
+    height: 81%;
+    margin-top: 0px;
+}
+.guesttext h3{
+    color: rgb(74, 74, 74);
+    margin-left: 16px;
+    font-size: 32px;
+    margin-bottom: 4px;
+}
+.guesttext h4{
+    color: rgb(74, 74, 74);
+    margin-left: 16px;
+    margin-bottom: 6px;
+    margin-top: 4px;
+    max-width: 80%;
+}
+.guesttext a{
+    color: rgb(74, 74, 74);
+    margin-left: 16px;
+    margin-top: 6px;
+}
+/*Ok revoir code plus court en haut*/
+
+.start{
+    background-color: brown;
+    height: 900px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 72px auto 72px;
+    grid-template-rows: 100px auto 32px;
+    justify-items: center;
+    
+}
+.start h2{
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
 }
 
+.start .course{
+    background-color: aqua;
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 32px;
+    row-gap: 32px;
+}
+.course .software{
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45% 55%;
+}
+.softwareimg{
+    background-image: url("./images/course-software.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
