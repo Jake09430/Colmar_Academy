@@ -1,13 +1,17 @@
 html{
     max-width: 1800px;
+    font-family: Verdana, sans-serif;
 }
 
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+}
 header{
     background-color: rgb(255, 255, 255);
     max-width: 1800px;
     height: 64px;
     top: 0px;
-    position: absolute;
     width: 100%;
     display: inline-flex;
     align-items: center;
@@ -52,7 +56,6 @@ header h1 span{
 
 main{
     top: 64px;
-    position: absolute;
     max-width: 1800px;
     width: 100%;
     display: block;
@@ -129,6 +132,7 @@ main{
 .practice{
     height: 600px;
     display: flex;
+    margin-bottom: 32px;
 }
 .practice .practiceimg{
     background-color: rgb(255, 255, 255);
@@ -305,7 +309,7 @@ main{
 /*Ok revoir code plus court en haut*/
 
 .start{
-    background-color: brown;
+    background-color: rgb(216, 216, 216);
     height: 900px;
     width: 100%;
     display: grid;
@@ -315,7 +319,10 @@ main{
     
 }
 .start h2{
+    color: rgb(74, 74, 74);
     text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -323,7 +330,6 @@ main{
 }
 
 .start .course{
-    background-color: aqua;
     background-size: 100%;
     height: 100%;
     width: 100%;
@@ -338,7 +344,7 @@ main{
     row-gap: 32px;
 }
 .course .software{
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
@@ -351,4 +357,440 @@ main{
     background-image: url("./images/course-software.jpg");
     background-size:cover;
     background-repeat: no-repeat;
+}
+.softwaretext{
+    margin-left: 16px;
+}
+
+.softwaretext h3{
+    color: rgb(74, 74, 74);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+.softwaretext h4{
+    color: rgb(124, 124, 124);
+    font-size: 18px;
+    font-weight: lighter;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+.softwaretext p{
+    color: rgb(124, 124, 124);
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 0px;
+    width: 80%;
+}
+.course .art{
+    background-color: rgb(255, 255, 255);
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45% 55%;
+}
+.artimg{
+    background-image: url("./images/course-computer-art.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.arttext{
+    margin-left: 16px;
+}
+
+.arttext h3{
+    color: rgb(74, 74, 74);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+.arttext h4{
+    color: rgb(124, 124, 124);
+    font-size: 18px;
+    font-weight: lighter;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+.arttext p{
+    color: rgb(124, 124, 124);
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 0px;
+    width: 80%;
+}
+.course .design{
+    background-color: rgb(255, 255, 255);
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45% 55%;
+}
+.designimg{
+    background-image: url("./images/course-design.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.designtext{
+    margin-left: 16px;
+}
+
+.designtext h3{
+    color: rgb(74, 74, 74);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+.designtext h4{
+    color: rgb(124, 124, 124);
+    font-size: 18px;
+    font-weight: lighter;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+.designtext p{
+    color: rgb(124, 124, 124);
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 0px;
+    width: 80%;
+}
+.course .data{
+    background-color: rgb(255, 255, 255);
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45% 55%;
+}
+.dataimg{
+    background-image: url("./images/course-data.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.datatext{
+    margin-left: 16px;
+}
+
+.datatext h3{
+    color: rgb(74, 74, 74);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+.datatext h4{
+    color: rgb(124, 124, 124);
+    font-size: 18px;
+    font-weight: lighter;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+.datatext p{
+    color: rgb(124, 124, 124);
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 0px;
+    width: 80%;
+}
+.course .business{
+    background-color: rgb(255, 255, 255);
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45% 55%;
+}
+.businessimg{
+    background-image: url("./images/course-business.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.businesstext{
+    margin-left: 16px;
+}
+
+.businesstext h3{
+    color: rgb(74, 74, 74);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+.businesstext h4{
+    color: rgb(124, 124, 124);
+    font-size: 18px;
+    font-weight: lighter;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+.businesstext p{
+    color: rgb(124, 124, 124);
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 0px;
+    width: 80%;
+}
+.course .marketing{
+    background-color: rgb(255, 255, 255);
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45% 55%;
+}
+.marketingimg{
+    background-image: url("./images/course-marketing.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.marketingtext{
+    margin-left: 16px;
+}
+
+.marketingtext h3{
+    color: rgb(74, 74, 74);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+.marketingtext h4{
+    color: rgb(124, 124, 124);
+    font-size: 18px;
+    font-weight: lighter;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+.marketingtext p{
+    color: rgb(124, 124, 124);
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 0px;
+    width: 80%;
+}
+/*ok simplifier code*/
+.thesis{
+    background-color: rgb(255, 255, 255);
+    height: 700px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px auto 32px;
+    justify-items: center;
+    
+}
+.thesis h2{
+    color: rgb(74, 74, 74);
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.thesis .reimg{
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: grid;
+    grid-template-columns: 24px auto 24px 40% 12px;
+    grid-template-rows: 100%;
+}
+.reimg .reimgvideo{
+    width: 100%;
+    height: 100%;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 75% 25%;
+}
+.reimgvideo .reimgvideo1{
+    width: 100%;
+    height:auto;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+.reimgvideo .reimgtext1{
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.reimgtext1 h3{
+    color: rgb(74, 74, 74);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 0px;
+}
+.reimgtext1 p{
+    color: rgb(124, 124, 124);
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 0px;
+    width: 90%;
+}
+.reimg .column{
+    width: 100%;
+    height: 100%;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 30% auto;
+}
+.column .fisma{
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: grid;
+    grid-template-columns: 16px 35% 16px auto;
+    grid-template-rows: 16px auto 16px;
+}
+.fisma .fismaimg{
+    background-image: url("./images/thesis-fisma.jpg");
+    background-size: cover;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.fisma .fismatext{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.fismatext h3{
+    color: rgb(74, 74, 74);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.fismatext p{
+    color: rgb(124, 124, 124);
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 0px;
+    width: 90%;
+}
+.column .now{
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: grid;
+    grid-template-columns: 16px 35% 16px auto;
+    grid-template-rows: 16px auto 16px;
+}
+.now .nowimg{
+    background-image: url("./images/thesis-now-and-then.jpg");
+    background-size: cover;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.now .nowtext{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.nowtext h3{
+    color: rgb(74, 74, 74);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.nowtext p{
+    color: rgb(124, 124, 124);
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 0px;
+    width: 90%;
+}
+footer{
+    bottom: 0px;
+    max-width: 1800px;
+    width: 100%;
+    height: 100px;
+    left: 0%;
+    border-top: 1px inset;
+    border-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: 16px 35% auto 10% 16px 10% 16px;
+    grid-template-rows: 16px auto;
+}
+footer h4{
+    margin-top: 0px;
+    height: 100%;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    font-weight: lighter;
+    font-size: 16px;
+    color: black;
+    opacity: 0.5;
+}
+footer .terms{
+    height: 100%;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-align: end;
+    font-weight: lighter;
+    color: black;
+    opacity: 0.5;
+    text-decoration-line: none;
+}
+footer .privacy{
+    height: 100%;
+    grid-column-start: 6;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-align: end;
+    font-weight: lighter;
+    font-size: 16px;
+    color: black;
+    opacity: 0.5;
+    text-decoration-line: none;
 }
