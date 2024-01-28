@@ -52,6 +52,7 @@ header h1 span{
     font-weight: bold;
 }
 
+
 /* Header ok */
 
 main{
@@ -64,55 +65,70 @@ main{
     opacity: 1;
 }
 .learn{
+    background-color: rgb(216, 216, 216);
     height: 600px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 24px 60% 24px auto;
+    grid-template-rows: 32px auto 32px;
+    justify-content: center;
 }
 .learn .learnimg{
-    background-color: rgb(216, 216, 216);
-    height: 100%;
-    width: 60%;
-    margin-left: 0px;
-    display: flex;
-}
-.learnimg .img1{
     background-image: url("./images/banner.jpg");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    margin-left: 32px;
+    height: 100%;
     width: 100%;
-    border-right: 20px;
-    
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
 }
 
 .learn .learntext{
     background-color: rgb(216, 216, 216);
     height: 100%;
-    width: 40%;
-    margin-right: 0px;
-    display: block;
+    width: 100%;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:  auto 150px 100px 100px auto;
 }
-.learntext .text1{
-    width: 80%;
-    margin-right: 0px;
-    margin-left: 24px;
-    margin-top: 150px;;
-}
-.text1 h2{
+.learntext h2{
     color:rgb(82, 81, 81);
-    font-size: 50px;
+    font-size: 44px;
     font-weight: bold;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    overflow: hidden;
+    margin-bottom: 0px;
 }
-.text1 h3{
+.learntext h3{
     color:rgb(82, 81, 81);
     font-size: 20px;
     font-weight: bold;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    overflow: hidden;
+    margin-top: 0px;
 }
 .button1{
     width: 80%;
     margin-right: 0px;
     margin-left: 24px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+.button1:hover{
+    opacity: 0.7;
 }
 .button1 .text2{
     display: flex;
@@ -191,120 +207,159 @@ main{
     width: 100%;
     display: grid;
     grid-template-columns: 35% 65%;
-    grid-template-rows:  100%;
+    grid-template-rows:  auto 16px 16px;
     overflow: hidden;
+}
+.practicebutton .orientation:hover{
+    opacity: 0.7;
 }
 .orientation .orientationimg{
     background-image: url("./images/information-orientation.jpg");
     background-repeat: no-repeat;
     background-size: 80%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
     width: 100%;
-    height: 81%;
+    height: auto;
     margin-top: 0px;
     margin-left: 16px;
 }
 .orientation .orientationtext{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
     width: 100%;
     height: 81%;
     margin-top: 0px;
 }
 .orientationtext h3{
     color: rgb(74, 74, 74);
-    margin-left: 16px;
-    font-size: 32px;
-    margin-bottom: 4px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
 }
 .orientationtext h4{
     color: rgb(74, 74, 74);
-    margin-left: 16px;
-    margin-bottom: 6px;
-    margin-top: 4px;
-    max-width: 80%;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    width: 90%;
 }
 .orientationtext a{
-    color: rgb(74, 74, 74);
-    margin-left: 16px;
-    margin-top: 6px;
+    color: rgb(74,144,226);
+    font-size: 16px;
+    font-weight: lighter;
+    width: 90%;
 }
 .practicebutton .campus{
     height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: 35% 65%;
-    grid-template-rows:  100%;
+    grid-template-rows:  auto 16px 16px;
     overflow: hidden;
+}
+.practicebutton .campus:hover{
+    opacity: 0.7;
 }
 .campus .campusimg{
     background-image: url("./images/information-campus.jpg");
     background-repeat: no-repeat;
     background-size: 80%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
     width: 100%;
-    height: 81%;
+    height: auto;
     margin-top: 0px;
     margin-left: 16px;
 }
 .campus .campustext{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
     width: 100%;
     height: 81%;
     margin-top: 0px;
 }
 .campustext h3{
     color: rgb(74, 74, 74);
-    margin-left: 16px;
-    font-size: 32px;
-    margin-bottom: 4px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
 }
 .campustext h4{
     color: rgb(74, 74, 74);
-    margin-left: 16px;
-    margin-bottom: 6px;
-    margin-top: 4px;
-    max-width: 80%;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    width: 90%;
 }
 .campustext a{
-    color: rgb(74, 74, 74);
-    margin-left: 16px;
-    margin-top: 6px;
+    color: rgb(74,144,226);
+    font-size: 16px;
+    font-weight: lighter;
+    width: 90%;
 }
 .practicebutton .guest{
     height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: 35% 65%;
-    grid-template-rows:  100%;
+    grid-template-rows:  auto 16px 16px;
     overflow: hidden;
+}
+.practicebutton .guest:hover{
+    opacity: 0.7;
 }
 .guest .guestimg{
     background-image: url("./images/information-guest-lecture.jpg");
     background-repeat: no-repeat;
     background-size: 80%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
     width: 100%;
-    height: 81%;
+    height: auto;
     margin-top: 0px;
     margin-left: 16px;
 }
 .guest .guesttext{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
     width: 100%;
     height: 81%;
     margin-top: 0px;
 }
 .guesttext h3{
     color: rgb(74, 74, 74);
-    margin-left: 16px;
-    font-size: 32px;
-    margin-bottom: 4px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
 }
 .guesttext h4{
     color: rgb(74, 74, 74);
-    margin-left: 16px;
-    margin-bottom: 6px;
-    margin-top: 4px;
-    max-width: 80%;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    width: 90%;
 }
 .guesttext a{
-    color: rgb(74, 74, 74);
-    margin-left: 16px;
-    margin-top: 6px;
+    color: rgb(74,144,226);
+    font-size: 16px;
+    font-weight: lighter;
+    width: 90%;
 }
 /*Ok revoir code plus court en haut*/
 
@@ -353,6 +408,9 @@ main{
     grid-template-columns: 1fr;
     grid-template-rows: 45% 55%;
 }
+.course .software:hover{
+    opacity: 0.7;
+}
 .softwareimg{
     background-image: url("./images/course-software.jpg");
     background-size:cover;
@@ -392,6 +450,9 @@ main{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 45% 55%;
+}
+.course .art:hover{
+    opacity: 0.7;
 }
 .artimg{
     background-image: url("./images/course-computer-art.jpg");
@@ -433,6 +494,9 @@ main{
     grid-template-columns: 1fr;
     grid-template-rows: 45% 55%;
 }
+.course .design:hover{
+    opacity: 0.7;
+}
 .designimg{
     background-image: url("./images/course-design.jpg");
     background-size:cover;
@@ -472,6 +536,9 @@ main{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 45% 55%;
+}
+.course .data:hover{
+    opacity: 0.7;
 }
 .dataimg{
     background-image: url("./images/course-data.jpg");
@@ -513,6 +580,9 @@ main{
     grid-template-columns: 1fr;
     grid-template-rows: 45% 55%;
 }
+.course .business:hover{
+    opacity: 0.7;
+}
 .businessimg{
     background-image: url("./images/course-business.jpg");
     background-size:cover;
@@ -552,6 +622,9 @@ main{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 45% 55%;
+}
+.course .marketing:hover{
+    opacity: 0.7;
 }
 .marketingimg{
     background-image: url("./images/course-marketing.jpg");
@@ -680,6 +753,9 @@ main{
     grid-template-columns: 16px 35% 16px auto;
     grid-template-rows: 16px auto 16px;
 }
+.column .fisma:hover{
+    opacity:0.7;
+}
 .fisma .fismaimg{
     background-image: url("./images/thesis-fisma.jpg");
     background-size: cover;
@@ -717,6 +793,9 @@ main{
     display: grid;
     grid-template-columns: 16px 35% 16px auto;
     grid-template-rows: 16px auto 16px;
+}
+.column .now:hover{
+    opacity:0.7;
 }
 .now .nowimg{
     background-image: url("./images/thesis-now-and-then.jpg");
@@ -781,6 +860,9 @@ footer .terms{
     opacity: 0.5;
     text-decoration-line: none;
 }
+footer .terms:hover{
+    opacity: 1;
+  }
 footer .privacy{
     height: 100%;
     grid-column-start: 6;
@@ -793,4 +875,616 @@ footer .privacy{
     color: black;
     opacity: 0.5;
     text-decoration-line: none;
+}
+footer .privacy:hover{
+  opacity: 1;
+}
+
+/* Mobile app
+to erase*/
+
+@media only screen and (min-width: 501px) {
+.appima1{
+    display:none;
+}
+.appima2{
+    display:none;
+}
+.appima3{
+    display:none;
+}
+}
+
+/* to add*/
+@media only screen and (max-width: 500px) {
+    body{
+        background-color: rgb(255, 255, 255);
+        max-width: 500px;
+        margin: 0px;
+    }
+    header{
+        background-color: rgb(255, 255, 255);
+        max-width: 500px;
+        height: 64px;
+        top: 0px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 100%;
+    }
+    .ima1{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-start: 1;
+        justify-self: center;
+    }
+    .appima1{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-start: 1;
+        justify-self: center;
+    }
+    .appima2{
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-start: 1;
+        justify-self: center;
+    }
+    .appima3{
+        grid-column-start: 4;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-start: 1;
+        justify-self: center;
+    }
+    .ima1:hover{
+        opacity: 0.7;
+    }
+    .appima1:hover{
+        opacity: 0.7;
+    }
+    .appima2:hover{
+        opacity: 0.7;
+    }
+    .appima3:hover{
+        opacity: 0.7;
+    }
+    header h1{
+        display: none;
+    }
+    .headerul li {
+        display: none;
+    }
+    main{
+        top: 64px;
+        max-width: 500px;
+        width: 100%;
+        display: block;
+        justify-content: center;
+        left: 0%;
+        opacity: 1;
+    }
+    .learn{
+        background-color: rgb(216, 216, 216);
+        height: 600px;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 32px auto;
+        justify-content: center;
+    }
+    .learn .learnimg{
+        background-image: url("./images/banner.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    
+    .learn .learntext{
+        background-color: rgb(216, 216, 216);
+        height: 100%;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-rows:  auto 32px auto 24px auto 32px;
+    }
+    .learntext h2{
+        color:rgb(82, 81, 81);
+        font-size: 44px;
+        font-weight: bold;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        overflow: hidden;
+        margin-top: 0px;
+    }
+    .learntext h3{
+        color:rgb(82, 81, 81);
+        font-size: 20px;
+        font-weight: bold;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        overflow: hidden;
+        margin-top: 0px;
+    }
+    .button1{
+        width: 100%;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 5;
+        margin-left: 0px;
+    }
+    .button1 .text2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text2 a{
+        background-color: rgb(82, 81, 81);
+        font-size: 30px;
+        color:rgb(255, 255, 255);
+        text-align: center;
+        text-decoration: none;
+        padding: 8px;
+        width: 100%;   
+    }
+    /*ok*/
+    .practice{
+        height: 1200px;
+        display: grid;
+    }
+    .practice .practiceimg{
+        display: none;
+    }
+    .practice .practicebutton{
+        margin-right: 0px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 33.4% 33.4% 33.4%;
+    }
+    .practicebutton .orientation{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-rows:  16px 58% 32px auto 16px;
+    }
+    .orientation .orientationimg{
+        background-image: url("./images/information-orientation-mobile.jpg");
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        margin-left: 0px;
+    }
+    .orientation .orientationtext{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        width: 100%;
+        height: 81%;
+        margin-top: 0px;
+    }
+    .orientationtext h3{
+        color: rgb(74, 74, 74);
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+    .orientationtext h4{
+        color: rgb(74, 74, 74);
+        font-size: 16px;
+        font-weight: lighter;
+        margin-top: 0px;
+        margin-bottom: 8px;
+        width: 90%;
+    }
+    .orientationtext a{
+        color: rgb(74,144,226);
+        font-size: 16px;
+        font-weight: lighter;
+        width: 90%;
+    }
+    .practicebutton .campus{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-rows:  16px 58% 32px auto 16px;
+    }
+    .campus .campusimg{
+        background-image: url("./images/information-campus-mobile.jpg");
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        margin-left: 0px;
+    }
+    .campus .campustext{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        width: 100%;
+        height: 81%;
+        margin-top: 0px;
+    }
+    .campustext h3{
+        color: rgb(74, 74, 74);
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+    .campustext h4{
+        color: rgb(74, 74, 74);
+        font-size: 16px;
+        font-weight: lighter;
+        margin-top: 0px;
+        margin-bottom: 8px;
+        width: 90%;
+    }
+    .campustext a{
+        color: rgb(74,144,226);
+        font-size: 16px;
+        font-weight: lighter;
+        width: 90%;
+    }
+    .practicebutton .guest{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-rows:  16px 58% 32px auto 16px;
+    }
+    .guest .guestimg{
+        background-image: url("./images/information-guest-lecture-mobile.jpg");
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        margin-left: 0px;
+    }
+    .guest .guesttext{
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 4;
+        width: 100%;
+        height: 81%;
+        margin-top: 0px;
+    }
+    .guesttext h3{
+        color: rgb(74, 74, 74);
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-bottom: 8px;
+    }
+    .guesttext h4{
+        color: rgb(74, 74, 74);
+        font-size: 16px;
+        font-weight: lighter;
+        margin-top: 0px;
+        margin-bottom: 8px;
+        width: 90%;
+    }
+    .guesttext a{
+        color: rgb(74,144,226);
+        font-size: 16px;
+        font-weight: lighter;
+        width: 90%;
+    }
+    /* ok */
+    .start{
+        background-color: rgb(255, 255, 255);
+        height: 600px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 16px 1fr 16px;
+        grid-template-rows: 70px auto 32px;
+        justify-items: center;
+        
+    }
+    .start h2{
+        color: rgb(74, 74, 74);
+        text-align: center;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    
+    .start .course{
+        height: 100%;
+        max-width: 100%;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        row-gap: 8px;
+    }
+    .course .software{
+        background-color: rgb(216, 216, 216);
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .softwareimg{
+        display:none;
+    }
+    .softwaretext{
+        width: 100%;
+    }
+    
+    .softwaretext h3{
+        
+        color: rgb(74, 74, 74);
+        font-size: 24px;
+        font-weight: bold;
+        width: fit-content;
+        margin-top: 16px;
+    }
+    .softwaretext h4{
+        display: none;
+    }
+    .softwaretext p{
+        display: none;
+    }
+    .course .art{
+        background-color: rgb(216, 216, 216);
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .artimg{
+        display:none;
+    }
+    .arttext{
+        width: 100%;
+    }
+    
+    .arttext h3{
+        color: rgb(74, 74, 74);
+        font-size: 24px;
+        font-weight: bold;
+        width: fit-content;
+        margin-top: 16px;
+    }
+    .arttext h4{
+        display: none;
+    }
+    .arttext p{
+        display: none;
+    }
+    .course .design{
+        background-color: rgb(216, 216, 216);
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+    }
+    .designimg{
+        display:none;
+    }
+    .designtext{
+        width: 100%;
+    }
+    
+    .designtext h3{
+        color: rgb(74, 74, 74);
+        font-size: 24px;
+        font-weight: bold;
+        width: fit-content;
+        margin-top: 16px;
+    }
+    .designtext h4{
+        display: none;
+    }
+    .designtext p{
+        display: none;
+    }
+    .course .data{
+        background-color: rgb(216, 216, 216);
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 4;
+        grid-row-end: 4;
+    }
+    .dataimg{
+        display:none;
+    }
+    .datatext{
+        width: 100%;
+    }
+    
+    .datatext h3{
+        color: rgb(74, 74, 74);
+        font-size: 24px;
+        font-weight: bold;
+        width: fit-content;
+        margin-top: 16px;
+    }
+    .datatext h4{
+        display: none;
+    }
+    .datatext p{
+        display: none;
+    }
+    .course .business{
+        background-color: rgb(216, 216, 216);
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
+    .businessimg{
+        display:none;
+    }
+    .businesstext{
+        width: 100%;
+    }
+    
+    .businesstext h3{
+        color: rgb(74, 74, 74);
+        font-size: 24px;
+        font-weight: bold;
+        width: fit-content;
+        margin-top: 16px;
+    }
+    .businesstext h4{
+        display: none;
+    }
+    .businesstext p{
+        display: none;
+    }
+    .course .marketing{
+        background-color: rgb(216, 216, 216);
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 6;
+        grid-row-end: 6;
+    }
+    .marketingimg{
+        display:none;
+    }
+    .marketingtext{
+        width: 100%;
+    }
+    
+    .marketingtext h3{
+        color: rgb(74, 74, 74);
+        font-size: 24px;
+        font-weight: bold;
+        width: fit-content;
+        margin-top: 16px;
+    }
+    .marketingtext h4{
+        display: none;
+    }
+    .marketingtext p{
+        display: none;
+    }
+    /* ok*/
+    .thesis{
+        background-color: rgb(255, 255, 255);
+        height: 450px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 100px auto 32px;
+        justify-items: center;
+        
+    }
+    .thesis h2{
+        color: rgb(74, 74, 74);
+        text-align: center;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    
+    .thesis .reimg{
+        background-size: 100%;
+        height: 100%;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100%;
+    }
+    .reimg .reimgvideo{
+        width: 100%;
+        height: 100%;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .reimgvideo .reimgtext1{
+        display: none;
+    }
+    .reimg .column{
+        display: none;
+    }
+    /* ok*/
+    footer{
+        bottom: 0px;
+        max-width: 500;
+        width: 100%;
+        height: 70px;
+        left: 0%;
+        border-top: none;
+        border-color: rgba(0, 0, 0, 0.5);
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-rows: 16px auto;
+    }
+    footer h4{
+        margin-top: 0px;
+        height: 100%;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        font-weight: lighter;
+        font-size: 16px;
+        color: black;
+        opacity: 0.5;
+    }
+    footer .terms{
+        display: none;
+    }
+    footer .privacy{
+        display: none;
+    }
 }
